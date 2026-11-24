@@ -1,36 +1,191 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🏔️ Treknama — Har Trek Ki Poori Kahani
 
-## Getting Started
+**A Himalayan Trek Discovery and Planning Platform**
 
-First, run the development server:
+[![Live Website](https://img.shields.io/badge/Live%20Website-Treknama-green)](https://treknama.vercel.app/)
+[![Next.js](https://img.shields.io/badge/Next.js-16-black)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)](https://www.typescriptlang.org/)
+[![Deployment](https://img.shields.io/badge/Deployment-Vercel-black)](https://vercel.com/)
+
+## 🌄 About the Project
+
+Treknama is a web-based Himalayan trekking discovery and planning platform designed to help users explore trekking destinations, compare available routes, understand trekking difficulty, and prepare for their adventures.
+
+The platform brings together trek discovery, preference-based recommendations, interactive maps, elevation profiles, weather information, and trekking preparation tools in one place.
+
+**Live Website:** https://treknama.vercel.app/
+
+## 🎯 Problem Statement
+
+Planning a Himalayan trek often requires users to gather information from multiple sources, including destination details, estimated costs, difficulty levels, weather conditions, route information, and required equipment.
+
+Treknama aims to simplify this process by providing a centralized and interactive platform for trekking discovery and preparation.
+
+## 🎯 Project Objectives
+
+- Provide an accessible platform for discovering Himalayan treks.
+- Help users compare trekking destinations based on important parameters.
+- Recommend treks according to user preferences.
+- Present route checkpoints and elevation information visually.
+- Provide weather forecasts for selected trekking destinations.
+- Assist trekkers with destination-specific packing checklists.
+- Introduce a community-oriented interface for sharing trekking experiences.
+
+## ✨ Key Features
+
+### 1. Trek Discovery and Search
+Explore trekking destinations through a searchable collection of Himalayan treks.
+
+### 2. Smart Trek Recommendations
+A preference-based recommendation engine ranks treks according to difficulty, duration, and estimated budget.
+
+### 3. Trek Comparison
+Compare multiple destinations side by side based on difficulty, duration, distance, estimated budget, and other details.
+
+### 4. Interactive Route Maps
+Explore visual route maps with checkpoints for supported trekking destinations.
+
+### 5. Elevation Profiles
+View graphical elevation profiles to understand approximate altitude changes along trekking routes.
+
+### 6. Live Weather Integration
+View current weather conditions and forecast information using the Open-Meteo weather API.
+
+### 7. Trek-Specific Packing Checklist
+Prepare for individual treks using categorized packing lists and interactive checkboxes.
+
+### 8. Community Experience Interface
+Explore a demonstration interface for sharing trekking experiences, ratings, trail conditions, and photographs.
+
+### 9. Journey Planning
+Explore transportation and journey-planning information to help prepare for reaching trekking destinations.
+
+## 🛠️ Technology Stack
+
+| Technology | Purpose |
+|---|---|
+| Next.js | Application framework |
+| React | User interface development |
+| TypeScript | Type-safe development |
+| Tailwind CSS | Styling and responsive design |
+| Leaflet | Interactive maps |
+| Open-Meteo API | Weather information |
+| Vercel | Application deployment |
+| Git and GitHub | Version control and source code hosting |
+
+## 🗺️ Trek Destinations
+
+The platform currently includes:
+
+- Hampta Pass
+- Triund
+- Kedarkantha
+- Nag Tibba
+- Everest Base Camp
+
+## ⚙️ Getting Started
+
+### Prerequisites
+
+- Node.js (compatible with the project's Next.js version)
+- npm
+- Git
+
+### Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Adi2507005/Treknama.git
+```
+
+Navigate to the project directory:
+
+```bash
+cd Treknama
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open your browser and visit:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Production Build
 
-## Learn More
+To create a production build:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run build
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📁 Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```text
+Treknama/
+├── public/
+│   └── images/
+├── src/
+│   ├── app/
+│   │   ├── treks/
+│   │   └── page.tsx
+│   ├── components/
+│   ├── data/
+│   ├── lib/
+│   └── types/
+├── package.json
+├── package-lock.json
+├── next.config.ts
+└── README.md
+```
 
-## Deploy on Vercel
+## ⚠️ Limitations
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Community reviews and photo submissions are currently demonstration features and are not permanently stored in a shared database.
+- Backend-based authentication and user account management are not yet implemented.
+- Route coordinates, distances, and elevation values are approximate and should not be used as substitutes for verified navigation data.
+- Weather forecasts are model-based estimates and may differ from actual mountain conditions.
+- Journey-planning information should be independently verified before travel.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🚀 Future Scope
+
+- Backend and database integration.
+- User registration and authentication.
+- Persistent community reviews and photo sharing.
+- Verified GPS route data and elevation information.
+- Advanced journey planning and transportation integration.
+- Personalized trekking recommendations.
+- Improved community trail updates.
+
+## 🌐 Deployment
+
+Treknama is deployed using Vercel.
+
+**Live Application:** https://treknama.vercel.app/
+
+**GitHub Repository:** https://github.com/Adi2507005/Treknama
+
+## 👨‍💻 Project Credits
+
+**Developed by:** Aditya Mishra
+
+**Project:** Treknama — Himalayan Trek Discovery and Planning Platform
+
+**Academic Context:** B.Tech Computer Science and Engineering — Minor Project
+
+---
+
+*Har Trek Ki Poori Kahani.*
+
